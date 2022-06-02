@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">appCalculadora2TableRow</string>
+    <string name="CLEAR">CLEAR</string>
+    <string name="Dividir">/</string>
+    <string name="Siete">7</string>
+    <string name="Ocho">8</string>
+    <string name="Nueve">9</string>
+    <string name="Multiplicar">X</string>
+    <string name="Cuatro">4</string>
+    <string name="Cinco">5</string>
+    <string name="Seis">6</string>
+    <string name="Restar">-</string>
+    <string name="Uno">1</string>
+    <string name="Dos">2</string>
+    <string name="Tres">3</string>
+    <string name="Sumar">+</string>
+    <string name="Cero">0</string>
+    <string name="Punto">.</string>
+    <string name="Igual">=</string>
+
+</resources>
