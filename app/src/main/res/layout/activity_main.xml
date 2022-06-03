@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/RojoOscuro"
+    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvPantalla"
         android:layout_width="match_parent"
         android:layout_height="159dp"
+        android:layout_margin="20dp"
+        android:background="#8C8383"
         android:gravity="right|center_vertical"
-        android:text="TextView"
+        android:text="@string/Cero"
+        android:textColor="@color/white"
         android:textSize="34sp" />
 
     <TableLayout
@@ -34,7 +37,8 @@
                 android:layout_span="3"
                 android:backgroundTint="#FFFFFF"
                 android:text="@string/CLEAR"
-                android:textColor="#090909" />
+                android:textColor="#090909"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnDividir"
@@ -43,7 +47,9 @@
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
                 android:backgroundTint="@color/Naranja"
-                android:text="@string/Dividir" />
+                android:onClick="onClickOp"
+                android:text="@string/Dividir"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -58,7 +64,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Siete" />
+                android:onClick="onClickNumber"
+                android:text="@string/Siete"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnOcho"
@@ -66,7 +74,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Ocho" />
+                android:onClick="onClickNumber"
+                android:text="@string/Ocho"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnNueve"
@@ -74,7 +84,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Nueve" />
+                android:onClick="onClickNumber"
+                android:text="@string/Nueve"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnMultiplicar"
@@ -83,7 +95,9 @@
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
                 android:backgroundTint="@color/Naranja"
-                android:text="@string/Multiplicar" />
+                android:onClick="onClickOp"
+                android:text="@string/Multiplicar"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -98,7 +112,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Cuatro" />
+                android:onClick="onClickNumber"
+                android:text="@string/Cuatro"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnCinco"
@@ -106,7 +122,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Cinco" />
+                android:onClick="onClickNumber"
+                android:text="@string/Cinco"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnSeis"
@@ -114,16 +132,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Seis" />
+                android:onClick="onClickNumber"
+                android:text="@string/Seis"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button25"
+                android:id="@+id/btnRestar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
                 android:backgroundTint="@color/Naranja"
-                android:text="@string/Restar" />
+                android:onClick="onClickOp"
+                android:text="@string/Restar"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -132,38 +154,46 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button24"
+                android:id="@+id/btnUno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Uno" />
+                android:onClick="onClickNumber"
+                android:text="@string/Uno"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button26"
+                android:id="@+id/btnDos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Dos" />
+                android:onClick="onClickNumber"
+                android:text="@string/Dos"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button27"
+                android:id="@+id/btnTres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Tres" />
+                android:onClick="onClickNumber"
+                android:text="@string/Tres"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button28"
+                android:id="@+id/btnSumar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
                 android:backgroundTint="@color/Naranja"
-                android:text="@string/Sumar" />
+                android:onClick="onClickOp"
+                android:text="@string/Sumar"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -172,30 +202,34 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button32"
+                android:id="@+id/btnCero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="4dp"
                 android:layout_span="2"
-                android:text="@string/Cero" />
+                android:onClick="onClickNumber"
+                android:text="@string/Cero"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button31"
+                android:id="@+id/btnPunto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
-                android:text="@string/Punto" />
+                android:text="@string/Punto"
+                android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button29"
+                android:id="@+id/btnIgual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:layout_span="1"
                 android:backgroundTint="@color/Naranja"
-                android:text="@string/Igual" />
+                android:text="@string/Igual"
+                android:textSize="24sp" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
