@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
             binding.tvPantalla.text = when (op){
                 "/" -> (n1/n2).toString()
-                "*" -> (n1*n2).toString()
+                "X" -> (n1*n2).toString()
                 "-" -> (n1-n2).toString()
                 "+" -> (n1+n2).toString()
                 else -> "Error"
